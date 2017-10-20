@@ -3,7 +3,7 @@
 //exit();
 if($_SESSION['loggedin'] != 'yes')
 {
-	header("Location: ../login.php"); /* Redirect browser */
+	header("Location: ../index.php"); /* Redirect browser */
 	exit();
 }
 ?>
