@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>[Signup] Blue Whale Game</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../bluewhale/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,23 +23,30 @@
     <link href="../bluewhale/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
 	<!-- Login CSS -->
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+	
+	<!-- Background CSS -->
+    <link href="../background.css" rel="stylesheet">
+
 
   </head>
 
   <body id="page-top">
+    <audio src="../bluewhale/files/blue-whale.mp3" autoplay loop>
+		<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+	</audio>
 <section id="login">
-    <div class="container">
+    <div class="container" style="padding-top:50px">
     	<div class="row">
 			<div class="col-md-4">
 			</div>
-    	    <div class="col-md-4">
+    	    <div class="col-md-4" style="background: rgba(135,206,250,0.3);padding:2em;border-radius:5px">
         	    <div class="form-wrap">
                 <h1>Sign up to play blue whale!</h1>
                     <form role="form" action="signupController.php" method="post" id="login-form" autocomplete="off">
                         <div class="form-group">
                             <label for="username" class="sr-only">Username</label>
-                            <input type="text" name="username" id="email" class="form-control" placeholder="Username">
+                            <input type="text" name="username" id="email" class="form-control" placeholder="Username" required>
 							<?php if(isset($_SESSION['duplicate'])==true){?><span style="color:red">Username already taken or something went wrong!</span><?php  session_unset('duplicate');}?>
                         </div>
                         <div class="form-group">
@@ -50,7 +57,7 @@
                             <label for="confirm" class="sr-only">Confirm Password</label>
                             <input type="password" name="confirm" id="confirm_password" class="form-control" placeholder="Confirm Password">
                         </div>
-                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Sign Up">
+                        <input type="submit" id="btn-login" class="btn btn-danger btn-lg btn-block" value="Sign Up ☠">
                     </form>
                     <a href="../index.php" class="forget">Login to play</a>
                     <hr>
@@ -83,28 +90,11 @@
 		</div> <!-- /.modal-content -->
 	</div> <!-- /.modal-dialog -->
 </div> <!-- /.modal -->
-
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p>Page © - 2014</p>
-                <p>Powered by <strong><a href="http://www.facebook.com/tavo.qiqe.lucero" target="_blank">TavoQiqe</a></strong></p>
-            </div>
-        </div>
-    </div>
-</footer>
+ 
 <!-- Bootstrap core JavaScript -->
     <script src="../bluewhale/vendor/jquery/jquery.min.js"></script>
     <script src="../bluewhale/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="../bluewhale/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="../bluewhale/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="../bluewhale/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="../bluewhale/js/creative.min.js"></script>
+  
 	<!-- Login JS -->
     <script src="script.js"></script>
   </body>

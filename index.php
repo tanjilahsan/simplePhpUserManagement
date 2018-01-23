@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>[Play] Blue Whale Game</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bluewhale/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,16 +24,23 @@
 
 	<!-- Login CSS -->
     <link href="style.css" rel="stylesheet">
+	
+	<!-- Login CSS -->
+    <link href="background.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
+	<audio src="/bluewhale/files/blue-whale.mp3" autoplay loop>
+		<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+	</audio>
+  
 <section id="login">
-    <div class="container">
+    <div class="container" style="padding-top:50px">
     	<div class="row">
 			<div class="col-md-4">
 			</div>
-    	    <div class="col-md-4">
+    	    <div class="col-md-4" style="background: rgba(135,206,250,0.3);padding:2em;border-radius:5px">
         	    <div class="form-wrap">
                 <h1>Log in to play blue whale!</h1>
                     <form role="form" action="loginController.php" method="post" id="login-form" autocomplete="off">
@@ -48,11 +55,7 @@
                             <label for="password" class="sr-only">Password</label>
                             <input type="password" name="password" id="password" class="form-control" placeholder="Password">
                         </div>
-                        <div class="checkbox">
-                            <span class="character-checkbox" onclick="showPassword()"></span>
-                            <span class="label">Show password</span>
-                        </div>
-                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
+                        <input type="submit" id="btn-login" class="btn btn-danger btn-lg btn-block" value="Log in ☠">
                     </form>
                     <a href="signup/signup.php" class="forget">Don't have account? Create now!</a>
                     <hr>
@@ -63,16 +66,6 @@
 		</div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p>Page © - 2014</p>
-                <p>Powered by <strong><a href="http://www.facebook.com/tavo.qiqe.lucero" target="_blank">TavoQiqe</a></strong></p>
-            </div>
-        </div>
-    </div>
-</footer>
 <!-- Bootstrap core JavaScript -->
     <script src="bluewhale/vendor/jquery/jquery.min.js"></script>
     <script src="bluewhale/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

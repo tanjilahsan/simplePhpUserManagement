@@ -8,8 +8,11 @@
     width: 100%;
     margin: 0 auto;
 }
+#login .form-wrap a{
+    color:#000;
+}
 #login h1 {
-    color: #1fa67b;
+    color: #000;
     font-size: 18px;
     text-align: center;
     font-weight: bold;

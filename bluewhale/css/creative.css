@@ -147,7 +147,7 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../img/header.jpg");
+   
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -177,11 +177,8 @@ header.masthead {
       min-height: 600px; }
       header.masthead .header-content {
         position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        top: 30%;
+        padding: 0 50px;  }
         header.masthead .header-content .header-content-inner {
           max-width: 1000px;
           margin-right: auto;
